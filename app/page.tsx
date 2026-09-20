@@ -2,12 +2,13 @@ import Image from "next/image";
 import { ClaimForm } from "@/components/ClaimForm";
 import { CtaButton } from "@/components/CtaButton";
 import { FadeIn } from "@/components/FadeIn";
+import { FaqAccordion } from "@/components/FaqAccordion";
 import { Icon, type IconName } from "@/components/Icons";
 import { Eyebrow, GoldLine, Section } from "@/components/Section";
 import { Testimonial } from "@/components/Testimonial";
 import { VideoPlaceholder } from "@/components/VideoPlaceholder";
 import { brand } from "@/lib/brand";
-import { home } from "@/lib/content";
+import { home, homeFaqs } from "@/lib/content";
 
 const surplusItems: {
   title: string;
@@ -211,6 +212,20 @@ export default function HomePage() {
               height={700}
               className="h-80 w-full rounded-sm object-cover"
             />
+          </div>
+        </FadeIn>
+      </Section>
+
+      <Section id="faq">
+        <FadeIn>
+          <Eyebrow>Questions</Eyebrow>
+          <h2 className="text-3xl md:text-4xl">Frequently Asked Questions</h2>
+          <p className="mt-4 max-w-2xl text-taupe">
+            Surplus-fund recovery can feel intimidating. These answers cover the points families
+            ask first.
+          </p>
+          <div className="mt-10">
+            <FaqAccordion items={homeFaqs} />
           </div>
         </FadeIn>
       </Section>

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { FadeIn } from "@/components/FadeIn";
+import { FaqAccordion, GlossaryList } from "@/components/FaqAccordion";
 import { Icon } from "@/components/Icons";
 import { PageHero } from "@/components/PageHero";
-import { Section } from "@/components/Section";
+import { Eyebrow, Section } from "@/components/Section";
 import { StateDirectory } from "@/components/StateDirectory";
 import { MapLegend, UsMap } from "@/components/UsMap";
+import { resourceFaqs, resourceGlossary } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Legal Resources",
@@ -71,6 +73,28 @@ export default function LegalResourcesPage() {
           <div className="mt-8">
             <UsMap mode="tax" pathPrefix="/legal-resources/tax-sale" />
             <MapLegend mode="tax" />
+          </div>
+        </FadeIn>
+      </Section>
+      <Section tone="beige" id="glossary">
+        <FadeIn>
+          <Eyebrow>Plain Language</Eyebrow>
+          <h2 className="text-3xl md:text-4xl">Foreclosure and Tax-Sale Terms</h2>
+          <p className="mt-4 max-w-2xl text-taupe">
+            Use these definitions as a starting point when you browse the maps. They are
+            high-level labels, not a statute summary.
+          </p>
+          <div className="mt-10">
+            <GlossaryList items={resourceGlossary} />
+          </div>
+        </FadeIn>
+      </Section>
+      <Section id="faq">
+        <FadeIn>
+          <Eyebrow>Questions</Eyebrow>
+          <h2 className="text-3xl md:text-4xl">Legal Resources FAQs</h2>
+          <div className="mt-10">
+            <FaqAccordion items={resourceFaqs} />
           </div>
         </FadeIn>
       </Section>

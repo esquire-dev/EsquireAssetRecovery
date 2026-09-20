@@ -225,6 +225,15 @@ export function QuoteIcon(props: IconProps) {
   );
 }
 
+export function PlusIcon(props: IconProps) {
+  return (
+    <Svg {...props}>
+      <path d="M12 5v14" />
+      <path d="M5 12h14" />
+    </Svg>
+  );
+}
+
 export const icons = {
   home: HomeIcon,
   scale: ScaleIcon,
@@ -246,6 +255,7 @@ export const icons = {
   menu: MenuIcon,
   close: CloseIcon,
   quote: QuoteIcon,
+  plus: PlusIcon,
 } as const;
 
 export type IconName = keyof typeof icons;

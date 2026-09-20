@@ -93,6 +93,52 @@ export const library = {
       body: "We demystify complex terminology and county procedures into clear, actionable steps so clients feel confident and informed.",
     },
   ],
+  extraModules: [
+    {
+      title: "Transparent Communication & Clear Guidance",
+      body: "Unclear instructions and unresponsive offices can make recovery feel exhausting. We provide consistent updates, explain requirements in plain language, and clarify what the court is reviewing at each stage. You will know what is happening, what we need from you, and what comes next—without confusion or pressure.",
+    },
+    {
+      title: "What Makes Esquire Different",
+      body: "Unlike services that offer minimal guidance or rely on automated systems, we review your situation thoroughly and explain the details with clarity. Experienced attorneys, auditors, and investigators handle research, filings, and communication with county and state agencies. We protect your rights, look out for your best interests, and guide recovery with diligence, respect, and accountability.",
+    },
+    {
+      title: "Eligibility Review: A Simple First Step",
+      body: "Many people assume they do not qualify, when eligibility is often easier to determine than expected. A no-cost review requires only minimal information. After evaluating your situation, we explain what we find in clear language and answer questions without pressure. Even if you are unsure whether surplus funds exist, a brief conversation can uncover options you did not know were available.",
+    },
+  ],
+  glossary: [
+    {
+      term: "Surplus funds",
+      definition:
+        "Money left after a foreclosure auction when the property sells for more than the debt owed. That extra amount legally belongs to the former homeowner.",
+    },
+    {
+      term: "Excess proceeds",
+      definition:
+        "Another name for surplus funds—the overage from a foreclosure or related sale that may still be held by a court, county, or other agency.",
+    },
+    {
+      term: "Petition",
+      definition:
+        "A formal court filing used to request release of surplus funds. Petitions must follow local rules and often need supporting records.",
+    },
+    {
+      term: "Affidavit",
+      definition:
+        "A sworn written statement used to verify identity, standing, or facts of the sale. Missing or incorrect affidavits can delay a claim.",
+    },
+    {
+      term: "Competing claims",
+      definition:
+        "Liens, junior creditors, or other parties who may also assert a right to surplus funds. Identifying them early helps clarify your legal position.",
+    },
+    {
+      term: "Disbursement",
+      definition:
+        "The final release of approved funds by the county or holding agency. Follow-through still matters here, because administrative issues can stall payment.",
+    },
+  ],
   workflow: {
     title: "Step-by-Step Recovery Workflow",
     steps: [
@@ -124,6 +170,8 @@ export const whoWeServe = {
   title: "Trusted Guidance, Transparent Process",
   subtitle:
     "Supporting Individuals and Families Through Complex Financial Transitions",
+  intro:
+    "Esquire Asset Recovery assists individuals and families who may be entitled to foreclosure overages or unclaimed assets but are unsure where to start. Many people reach out after losing a property, while managing an inherited estate, or after receiving an unfamiliar legal notice. You do not need to understand the entire process before contacting us.",
   audiences: [
     {
       title: "Homeowners Post-Foreclosure",
@@ -198,6 +246,137 @@ export const media = {
     },
   ],
 };
+
+export const homeFaqs = [
+  {
+    question: "What are surplus funds?",
+    answer:
+      "When a property is sold at a foreclosure auction, it may sell for more than the debt owed. That extra amount—known as surplus funds or excess proceeds—legally belongs to the former homeowner. Many people never realize the money is still being held.",
+  },
+  {
+    question: "Why do surplus funds go unclaimed?",
+    answer:
+      "The system is rarely designed with the homeowner in mind. Notices may be mailed to old addresses, court instructions can be hard to interpret, and deadlines are easy to miss. Many people also assume foreclosure means all equity is gone, when funds may still be waiting.",
+  },
+  {
+    question: "How do I find out if money might be waiting for me?",
+    answer:
+      "A brief, no-cost eligibility review is the first step. We use minimal information to evaluate records and explain whether recoverable funds may exist. Even if you are unsure you qualify, talking with a specialist can uncover opportunities you did not know existed.",
+  },
+  {
+    question: "Is there an upfront cost to start?",
+    answer:
+      "No. The eligibility review is provided at no cost, and Esquire operates without upfront fees to begin a review. There is no pressure and no obligation to proceed after you hear the results.",
+  },
+  {
+    question: "What does the recovery process involve?",
+    answer:
+      "Recovery is a court-regulated legal process. After a review, we investigate foreclosure records and auction results, prepare petitions and affidavits, file with the court, communicate with agencies, and stay with the claim through disbursement. You receive updates in plain language.",
+  },
+  {
+    question: "Could it already be too late?",
+    answer:
+      "Deadlines may apply, and waiting can put funds at risk. Do not assume the window is closed. A records review can confirm whether funds may still be recoverable. If recovery is not possible, you avoid unnecessary effort.",
+  },
+];
+
+export const libraryFaqs = [
+  ...homeFaqs,
+  {
+    question: "What documents are typically required?",
+    answer:
+      "Courts often require petitions, affidavits, identity verification, and supporting documentation—submitted correctly and on time. One missed form or deadline can delay a claim or put funds at risk. Esquire assembles and files the package so you are not left managing those details alone.",
+  },
+  {
+    question: "What are competing claims?",
+    answer:
+      "Other parties—such as lienholders—may also assert a right to surplus funds. During investigation we look for liens, competing claims, and missing documentation so you understand your position before filings begin.",
+  },
+  {
+    question: "What happens after the court approves a claim?",
+    answer:
+      "The county can then release the funds. We stay involved through the final steps: confirming required procedures, monitoring disbursement, and keeping you updated until money is delivered securely. Administrative issues at this stage can still cause delays if they are not followed through.",
+  },
+  {
+    question: "How is Esquire different from other recovery services?",
+    answer:
+      "We are an attorney-owned firm. Specialists handle research, filings, and agency communication rather than relying on automation or minimal guidance. We explain each step in plain language, do not use pressure, and treat recovery as both a legal process and a human one.",
+  },
+];
+
+export const whoWeServeFaqs = [
+  {
+    question: "Who can Esquire help?",
+    answer:
+      "We work with homeowners after foreclosure, families managing inherited property, and anyone who suspects that a past sale or old account generated uncollected overages. Many people contact us during uncertain or stressful periods. You do not need to have everything figured out first.",
+  },
+  {
+    question: "I am an heir or estate manager. Can you review a claim?",
+    answer:
+      "Yes. Families often balance grief and estate responsibilities while surplus funds sit unclaimed. We evaluate inherited-property situations, explain what we find in everyday language, and outline next steps without pressure.",
+  },
+  {
+    question: "Do I need to understand court procedures before I call?",
+    answer:
+      "No. Our role is to simplify the steps, help you make informed decisions, and serve as a reliable partner. We translate county records, court procedures, and legal terms into clear actions so you can move forward with confidence.",
+  },
+  {
+    question: "What if I only suspect funds exist?",
+    answer:
+      "That is a common starting point. Determining whether funds exist is often simpler than expected. A no-cost review is straightforward and pressure-free. Even if the outcome is only peace of mind, that insight can be valuable.",
+  },
+];
+
+export const resourceFaqs = [
+  {
+    question: "What is the difference between judicial and non-judicial foreclosure?",
+    answer:
+      "In a judicial foreclosure state, the typical path runs through the court, with a lawsuit and court-supervised sale. In a non-judicial state, sale is often handled under a power of sale in the mortgage or deed of trust, with required notices rather than a full lawsuit in every case. County clerks, courts, and loan documents still control the exact steps.",
+  },
+  {
+    question: "What do tax lien, tax deed, and redeemable tax deed mean?",
+    answer:
+      "These are high-level ways states structure property tax sales. A tax lien certificate sale typically sells the lien rather than the property itself. A tax deed sale generally conveys title. A redeemable tax deed often allows a redemption period after sale. Surplus or excess proceeds, if any, still depend on statute and county procedure.",
+  },
+  {
+    question: "Does this hub tell me if I am owed money?",
+    answer:
+      "No. These pages explain process type so you can understand how sales generally work in a state. They are not a substitute for the statute, a county file review, or a case evaluation. If you believe excess proceeds were held after a sale, we can help you review the claim.",
+  },
+  {
+    question: "Why do procedures vary so much by state?",
+    answer:
+      "Foreclosure and tax-sale law is local. Notices, timelines, redemption rights, and who holds surplus funds differ by state and often by county. That is why a records review matters more than a map color or a directory label.",
+  },
+];
+
+export const resourceGlossary = [
+  {
+    term: "Judicial foreclosure",
+    definition:
+      "A foreclosure path that typically proceeds through the courts, with a lawsuit, hearing, and court-supervised sale.",
+  },
+  {
+    term: "Non-judicial foreclosure",
+    definition:
+      "A foreclosure path typically handled under a power of sale in the mortgage or deed of trust, with required notices rather than a full lawsuit in every case.",
+  },
+  {
+    term: "Tax lien certificate",
+    definition:
+      "A tax-sale structure in which investors often purchase the lien for unpaid taxes rather than immediate title to the property.",
+  },
+  {
+    term: "Tax deed",
+    definition:
+      "A tax-sale structure in which the sale generally conveys title to the property, subject to state law.",
+  },
+  {
+    term: "Redeemable tax deed",
+    definition:
+      "A tax-sale structure that often allows a period after sale during which the former owner may redeem the property by paying amounts set by statute.",
+  },
+];
 
 export const privacy = {
   title: "Privacy Policy",

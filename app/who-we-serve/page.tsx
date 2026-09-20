@@ -3,10 +3,11 @@ import Image from "next/image";
 import { ClaimForm } from "@/components/ClaimForm";
 import { CtaButton } from "@/components/CtaButton";
 import { FadeIn } from "@/components/FadeIn";
+import { FaqAccordion } from "@/components/FaqAccordion";
 import { Icon, type IconName } from "@/components/Icons";
 import { PageHero } from "@/components/PageHero";
 import { Card, Eyebrow, Section } from "@/components/Section";
-import { home, whoWeServe } from "@/lib/content";
+import { home, whoWeServe, whoWeServeFaqs } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Who We Serve",
@@ -33,6 +34,7 @@ export default function WhoWeServePage() {
       <Section>
         <FadeIn>
           <h2 className="text-3xl">Who We Serve</h2>
+          <p className="mt-4 max-w-3xl text-lg text-taupe">{whoWeServe.intro}</p>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {whoWeServe.audiences.map((item, index) => (
               <Card key={item.title} padded={false} className="overflow-hidden">
@@ -70,6 +72,15 @@ export default function WhoWeServePage() {
                 <p className="mt-3 text-taupe">{item.body}</p>
               </Card>
             ))}
+          </div>
+        </FadeIn>
+      </Section>
+      <Section id="faq">
+        <FadeIn>
+          <Eyebrow>Questions</Eyebrow>
+          <h2 className="text-3xl md:text-4xl">Who We Serve FAQs</h2>
+          <div className="mt-10">
+            <FaqAccordion items={whoWeServeFaqs} />
           </div>
         </FadeIn>
       </Section>

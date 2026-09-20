@@ -80,3 +80,11 @@ a {
       rgba(199, 162, 74, 0.045) 73px
     );
 }
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}

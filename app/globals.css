@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --forest: #16302a;
+  --emerald: #244f42;
+  --gold: #c7a24a;
+  --gold-soft: #e2c98a;
+  --beige: #f4eee1;
+  --ivory: #fbf8f2;
+  --charcoal: #201f1c;
+  --taupe: #6b6355;
+  --rust: #8c5340;
+  --line: rgba(199, 162, 74, 0.45);
+}
+
+@theme inline {
+  --color-forest: var(--forest);
+  --color-emerald: var(--emerald);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-beige: var(--beige);
+  --color-ivory: var(--ivory);
+  --color-charcoal: var(--charcoal);
+  --color-taupe: var(--taupe);
+  --color-rust: var(--rust);
+  --color-line: var(--line);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-playfair);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ivory);
+  color: var(--charcoal);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.018em;
+  line-height: 1.18;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--forest);
+  }
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--gold-soft);
+  color: var(--forest);
+}
+
+.hero-texture {
+  background-color: var(--forest);
+  background-image:
+    linear-gradient(180deg, rgba(22, 48, 42, 0.2), rgba(36, 79, 66, 0.35)),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 72px,
+      rgba(199, 162, 74, 0.045) 72px,
+      rgba(199, 162, 74, 0.045) 73px
+    );
+}

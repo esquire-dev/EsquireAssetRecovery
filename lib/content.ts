@@ -38,12 +38,19 @@ export const home = {
   },
   form: {
     title: "Yes, I Want My Surplus Refund Check",
+    intro: "Share your contact information. There is no upfront cost to start a review.",
     submit: "Please Expedite My Surplus Refund Check",
     transactionalConsent:
       "I agree to receive calls and text messages from Esquire Asset Recovery, LLC about my claim, including by autodialed or prerecorded means. Message and data rates may apply. Consent is not a condition of receiving services.",
     marketingConsent:
       "I agree to receive marketing communications from Esquire Asset Recovery, LLC by email, phone, or text. I may opt out at any time.",
   },
+};
+
+export const about = {
+  title: "The Firm Behind Your Recovery",
+  subtitle:
+    "An attorney-owned practice recovering surplus funds for homeowners, heirs, and families after foreclosure.",
 };
 
 export const team = {

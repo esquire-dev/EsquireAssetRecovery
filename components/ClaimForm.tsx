@@ -55,11 +55,11 @@ export function ClaimForm() {
   }
 
   const fieldClass =
-    "mt-2 w-full rounded-sm border border-forest/15 bg-ivory px-4 py-3 text-charcoal outline-none transition-colors focus:border-gold";
+    "mt-2 w-full rounded-sm border border-gold/30 bg-ivory px-4 py-3 text-charcoal outline-none transition-colors focus:border-gold";
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="grid gap-4 sm:grid-cols-2">
         <label className="block text-sm font-medium text-forest">
           First Name
           <input {...register("firstName")} autoComplete="given-name" className={fieldClass} />
@@ -105,7 +105,7 @@ export function ClaimForm() {
 
       <button
         type="submit"
-        className="w-full rounded-sm border border-forest bg-forest px-6 py-4 text-sm font-medium tracking-[0.12em] text-ivory uppercase transition-colors hover:border-emerald hover:bg-emerald md:w-auto"
+        className="w-full rounded-sm border border-gold bg-gold px-6 py-4 text-sm font-medium tracking-[0.12em] text-forest uppercase transition-colors hover:bg-gold-soft md:w-auto"
       >
         {home.form.submit}
       </button>

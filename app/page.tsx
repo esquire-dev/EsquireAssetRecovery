@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { ClaimForm } from "@/components/ClaimForm";
+import { ClaimSection } from "@/components/ClaimSection";
 import { CtaButton } from "@/components/CtaButton";
 import { FadeIn } from "@/components/FadeIn";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { Icon, type IconName } from "@/components/Icons";
-import { Eyebrow, GoldLine, Section } from "@/components/Section";
+import { Eyebrow, Section } from "@/components/Section";
 import { Testimonial } from "@/components/Testimonial";
 import { VideoPlaceholder } from "@/components/VideoPlaceholder";
 import { brand } from "@/lib/brand";
@@ -96,22 +96,32 @@ export default function HomePage() {
 
       <Section tone="beige">
         <FadeIn>
-          <div className="grid items-center gap-12 md:grid-cols-2">
+          <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
-              <h2 className="max-w-4xl text-3xl md:text-4xl">{home.value.headline}</h2>
-              <p className="mt-10 font-heading text-3xl text-forest md:text-4xl">
+              <h2 className="max-w-xl text-3xl md:text-[2.55rem] md:leading-tight">
+                {home.value.headline}
+              </h2>
+              <div className="mt-8 flex items-center gap-3" aria-hidden="true">
+                <span className="h-px w-12 bg-gold" />
+                <span className="h-1.5 w-1.5 rotate-45 bg-gold" />
+                <span className="h-px w-12 bg-gold" />
+              </div>
+              <p className="mt-6 font-heading text-2xl text-gold italic md:text-[1.85rem]">
                 {home.value.banner}
               </p>
-              <GoldLine className="mt-5" />
             </div>
-            <div className="relative h-72 overflow-hidden rounded-sm md:h-80">
-              <Image
-                src="/images/surplus-home.jpg"
-                alt="A family home standing after foreclosure, representing equity that may still be recovered"
-                fill
-                className="object-cover"
-                sizes="(min-width: 768px) 50vw, 100vw"
-              />
+            <div className="border border-gold bg-ivory p-2 shadow-[0_18px_44px_rgba(32,31,28,0.08)]">
+              <div className="border border-gold/20">
+                <div className="relative h-80 md:h-[24rem]">
+                  <Image
+                    src="/images/surplus-home.jpg"
+                    alt="A family home standing after foreclosure, representing equity that may still be recovered"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </FadeIn>
@@ -230,18 +240,7 @@ export default function HomePage() {
         </FadeIn>
       </Section>
 
-      <Section id="claim" tone="beige">
-        <FadeIn>
-          <Eyebrow>Claim Review</Eyebrow>
-          <h2 className="text-3xl md:text-4xl">{home.form.title}</h2>
-          <p className="mt-4 max-w-2xl text-taupe">
-            Share your contact information. There is no upfront cost to start a review.
-          </p>
-          <div className="mt-10 max-w-3xl rounded-md border border-gold/30 border-t-2 border-t-gold bg-ivory p-6 md:p-8">
-            <ClaimForm />
-          </div>
-        </FadeIn>
-      </Section>
+      <ClaimSection />
     </>
   );
 }

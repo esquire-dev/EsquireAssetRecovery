@@ -23,9 +23,8 @@ export const brand = {
 
 export const navItems = [
   { href: "/", label: "Home" },
-  { href: "/team", label: "Our Team" },
+  { href: "/about", label: "About" },
   { href: "/library", label: "Library & Process" },
-  { href: "/who-we-serve", label: "Who We Serve" },
   { href: "/legal-resources", label: "Resources" },
   { href: "/media", label: "Media Coverage" },
 ] as const;

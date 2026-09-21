@@ -14,22 +14,26 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-gold/20 bg-forest text-ivory">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 md:px-8">
-        <Link href="/" className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
+        <Link
+          href="/"
+          className="group flex min-w-0 items-center gap-3"
+          onClick={() => setOpen(false)}
+        >
           <Image
             src={brand.logoSrc}
             alt=""
             width={48}
             height={48}
-            className="h-12 w-12 rounded-full bg-ivory object-cover"
+            className="h-12 w-12 rounded-full bg-ivory object-cover transition-opacity duration-300 group-hover:opacity-90"
             style={{ width: 48, height: 48 }}
             priority
           />
-          <span className="font-heading truncate text-[15px] leading-tight font-semibold tracking-wide">
+          <span className="font-heading truncate text-[15px] leading-tight font-semibold tracking-wide transition-colors duration-300 group-hover:text-gold">
             {brand.shortName}
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-3.5 xl:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-8 xl:flex" aria-label="Primary">
           {navItems.map((item) => {
             const active =
               item.href === "/"
@@ -39,8 +43,10 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-[12px] tracking-wide whitespace-nowrap transition-colors hover:text-gold ${
-                  active ? "text-gold" : "text-ivory/80"
+                className={`relative py-1 text-[12px] tracking-[0.14em] whitespace-nowrap transition-colors duration-300 after:absolute after:right-0 after:bottom-0 after:left-0 after:h-px after:origin-left after:bg-gold after:transition-transform after:duration-300 hover:text-gold ${
+                  active
+                    ? "text-gold after:scale-x-100"
+                    : "text-ivory/80 after:scale-x-0 hover:after:scale-x-100"
                 }`}
               >
                 {item.label}
@@ -49,7 +55,7 @@ export function Header() {
           })}
           <a
             href="/#claim"
-            className="rounded-sm border border-gold bg-gold px-4 py-2 text-[11px] font-medium tracking-[0.16em] text-forest uppercase transition-colors hover:bg-gold-soft"
+            className="ml-2 rounded-sm border border-gold bg-gold px-4 py-2 text-[11px] font-medium tracking-[0.16em] text-forest uppercase transition-colors duration-300 hover:border-gold-soft hover:bg-gold-soft"
           >
             Check My Eligibility
           </a>
@@ -82,7 +88,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="py-1 text-sm text-ivory"
+              className="py-1.5 text-sm text-ivory/80 transition-colors duration-300 hover:text-gold"
               onClick={() => setOpen(false)}
             >
               {item.label}
@@ -90,7 +96,7 @@ export function Header() {
           ))}
           <a
             href="/#claim"
-            className="mt-2 rounded-sm bg-gold px-4 py-3 text-center text-[11px] font-medium tracking-[0.16em] text-forest uppercase"
+            className="mt-2 rounded-sm bg-gold px-4 py-3 text-center text-[11px] font-medium tracking-[0.16em] text-forest uppercase transition-colors duration-300 hover:bg-gold-soft"
             onClick={() => setOpen(false)}
           >
             Check My Eligibility

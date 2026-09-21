@@ -39,7 +39,7 @@ export const home = {
   form: {
     title: "Yes, I Want My Surplus Refund Check",
     intro: "Share your contact information. There is no upfront cost to start a review.",
-    submit: "Please Expedite My Surplus Refund Check",
+    submit: "Expedite My Refund",
     transactionalConsent:
       "I agree to receive calls and text messages from Esquire Asset Recovery, LLC about my claim, including by autodialed or prerecorded means. Message and data rates may apply. Consent is not a condition of receiving services.",
     marketingConsent:

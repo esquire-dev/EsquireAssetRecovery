@@ -105,7 +105,7 @@ export function ClaimForm() {
 
       <button
         type="submit"
-        className="w-full rounded-sm border border-gold bg-gold px-6 py-4 text-sm font-medium tracking-[0.12em] text-forest uppercase transition-colors hover:bg-gold-soft md:w-auto"
+        className="rounded-sm border border-gold bg-gold px-5 py-2.5 text-[12px] font-medium tracking-[0.14em] text-forest uppercase transition-colors hover:bg-gold-soft"
       >
         {home.form.submit}
       </button>

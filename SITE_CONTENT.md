@@ -8,7 +8,7 @@ Shared claim form (Home and About):
 - Fields: First Name, Last Name, Phone, Email
 - Transactional consent: I agree to receive calls and text messages from Esquire Asset Recovery, LLC about my claim, including by autodialed or prerecorded means. Message and data rates may apply. Consent is not a condition of receiving services.
 - Marketing consent: I agree to receive marketing communications from Esquire Asset Recovery, LLC by email, phone, or text. I may opt out at any time.
-- Submit: Please Expedite My Surplus Refund Check
+- Submit: Expedite My Refund
 
 Footer: 8911 North Capital of Texas Highway, Suite 4200, Austin, Texas 78759-7439 · 737.320.3131 · George@EsquireAssetRecovery.com · Privacy Policy · Terms and Conditions · Disclaimer: No upfront cost. An attorney-owned firm. Recovering surplus funds with legal-grade care.
 
